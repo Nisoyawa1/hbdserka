@@ -19,7 +19,7 @@ now = datetime.now()
 # convert to string
 date_time_str = now+ timedelta(days=0)
 date_time_str = date_time_str.strftime('%#m%d.0')
-print(date_time_str)
+st.write(date_time_str)
 
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
 print(df_new)
@@ -27,7 +27,6 @@ print(df_new)
 #Using unique Code
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
 df_new_=df_new[['NAMA','PATRA','PJ']]
-
 
 hide_dataframe_row_index = """
             <style>
