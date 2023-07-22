@@ -20,7 +20,6 @@ now = datetime.now()
 date_time_str = now+ timedelta(days=0)
 date_time_str = date_time_str.strftime('%#m%d.0').lstrip('0')
 
-st.write(date_time_str)
 
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
 print(df_new)
