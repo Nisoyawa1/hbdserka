@@ -28,6 +28,7 @@ print(df_new)
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
 df_new_=df_new[['NAMA','PATRA','PJ']]
 
+
 hide_dataframe_row_index = """
             <style>
             .row_heading.level0 {display:none}
@@ -44,8 +45,10 @@ st.header ('Guide Line HBD')
 st.text('1. Buka google calendar dan atau lihat pembagian HBDan di web ini')
 st.text('2. Chat Tiara buat booking publikasi minimal J-3 ')
 st.text('3. Cek database, didalemnya yang perlu dicek: foto dan divisinya, download fotonya:')
-st.write('[Foto Taraksa Mahogra](https://drive.google.com/drive/folders/1k2bz8m01luw88IdfE1ryjpIKdWwnSQyxEkFFgK6TN2_7S_8q-gT1Ko4fNCygnlnLJbCZbLli)')
-st.write('[Foto Aquileo](https://drive.google.com/drive/folders/1mhpdPt4jmCbQuUPCLKTCV4637U2lRDdR2W3SJdvt2nIWRRV2y19XdljH1ukbpvKt5AnP4-3s)')
+if st.button('Foto Taraksa Mahogra'):
+    webbrowser.open_new_tab('https://drive.google.com/drive/folders/1k2bz8m01luw88IdfE1ryjpIKdWwnSQyxEkFFgK6TN2_7S_8q-gT1Ko4fNCygnlnLJbCZbLli')
+if st.button('Foto Aquileo'):
+    webbrowser.open_new_tab('https://drive.google.com/drive/folders/1mhpdPt4jmCbQuUPCLKTCV4637U2lRDdR2W3SJdvt2nIWRRV2y19XdljH1ukbpvKt5AnP4-3s')
 st.write('4. Edit foto pake canva aja biar gampang, [ini linknya](https://canva.com) ')
 st.text('    Login pake canva premium biar gampang editnya')
 st.text('    Uname: serkainternal@gmail.com')
@@ -53,5 +56,14 @@ st.text('    Password: serka2022')
 st.write( '5. Terus buat fun factnya, tanya temen deketnya ya. ')
 st.write( 'Untuk Temen deketnya bisa dicari disini: [ini linknya](https://canva.com)')
 st.text(' Kalau gaada disini bisa chat gw aja atau ketang nya di masing masing angkatan')
+
+
+
+
+
+
+
+
+
 
 
