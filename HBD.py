@@ -17,7 +17,7 @@ df=df.applymap(str)
 now = datetime.now()
 
 # convert to string
-date_time_str = now+ timedelta(days=3)
+date_time_str = now+ timedelta(days=0)
 date_time_str = date_time_str.strftime('%#m%d.0')
 print(date_time_str)
 
