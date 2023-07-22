@@ -19,6 +19,7 @@ now = datetime.now()
 # convert to string
 date_time_str = now+ timedelta(days=0)
 date_time_str = date_time_str.strftime('%#m%d.0').replace("-0", "-")
+
 st.write(date_time_str)
 
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
@@ -45,10 +46,10 @@ st.header ('Guide Line HBD')
 st.text('1. Buka google calendar dan atau lihat pembagian HBDan di web ini')
 st.text('2. Chat Tiara buat booking publikasi minimal J-3 ')
 st.text('3. Cek database, didalemnya yang perlu dicek: foto dan divisinya, download fotonya:')
-if st.button('Foto Taraksa Mahogra'):
-    webbrowser.open_new_tab('https://drive.google.com/drive/folders/1k2bz8m01luw88IdfE1ryjpIKdWwnSQyxEkFFgK6TN2_7S_8q-gT1Ko4fNCygnlnLJbCZbLli')
-if st.button('Foto Aquileo'):
-    webbrowser.open_new_tab('https://drive.google.com/drive/folders/1mhpdPt4jmCbQuUPCLKTCV4637U2lRDdR2W3SJdvt2nIWRRV2y19XdljH1ukbpvKt5AnP4-3s')
+
+st.write( '[Taraksa Mahogra](https://drive.google.com/drive/folders/1k2bz8m01luw88IdfE1ryjpIKdWwnSQyxEkFFgK6TN2_7S_8q-gT1Ko4fNCygnlnLJbCZbLli)')
+st.write( '[Aquileo](https://drive.google.com/drive/folders/1mhpdPt4jmCbQuUPCLKTCV4637U2lRDdR2W3SJdvt2nIWRRV2y19XdljH1ukbpvKt5AnP4-3s)')
+
 st.write('4. Edit foto pake canva aja biar gampang, [ini linknya](https://canva.com) ')
 st.text('    Login pake canva premium biar gampang editnya')
 st.text('    Uname: serkainternal@gmail.com')
