@@ -18,7 +18,7 @@ now = datetime.now()
 
 # convert to string
 date_time_str = now+ timedelta(days=0)
-date_time_str = date_time_str.strftime('%#m%d.0')
+date_time_str = date_time_str.strftime('%#m%d.0').lstrip('0')
 
 st.write(date_time_str)
 
