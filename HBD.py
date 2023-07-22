@@ -17,7 +17,7 @@ df=df.applymap(str)
 now = datetime.now()
 
 # convert to string
-date_time_str = now.strftime`('%#m%d.0')
+date_time_str = now.strftime('%#m%d.0')
 st.write(date_time_str)
 
 df_new=df[df['Unique Code'].str.fullmatch(date_time_str)]
