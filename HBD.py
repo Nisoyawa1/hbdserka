@@ -50,7 +50,7 @@ st.text('3. Cek database, didalemnya yang perlu dicek: foto dan divisinya, downl
 st.write( '[Taraksa Mahogra](https://drive.google.com/drive/folders/1k2bz8m01luw88IdfE1ryjpIKdWwnSQyxEkFFgK6TN2_7S_8q-gT1Ko4fNCygnlnLJbCZbLli)')
 st.write( '[Aquileo](https://drive.google.com/drive/folders/1mhpdPt4jmCbQuUPCLKTCV4637U2lRDdR2W3SJdvt2nIWRRV2y19XdljH1ukbpvKt5AnP4-3s)')
 
-st.write('4. Edit foto pake canva aja biar gampang, [ini linknya](https://www.canva.com/design/DAFpFnmzpYQ/GhY9ldsvqaEDI34DPjigjg/edit?utm_content=DAFpFnmzpYQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) ')
+st.write('4. Edit foto pake canva aja biar gampang, [ini linknya](https://www.canva.com/design/DAE8eLHUZlg/6Y-F-WagjzqZ2NRsX95axg/edit?analyticsCorrelationId=f764be0f-cae2-4c0d-8573-f05616b735fa) ')
 st.text('    Login pake canva premium biar gampang editnya')
 st.text('    Uname: serkainternal@gmail.com')
 st.text('    Password: serka2022')
